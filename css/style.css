@@ -17,12 +17,23 @@
         display: none;
    
     }
+    .map-container{
+        display: none;
+    }
+    .hero-text-container{
+        display: none;
+    }
   }
+
+:root{
+    --clr_white:#fff;
+    --clr_black:#000;
+}
 
 
 body{
-    font-family: Mulish;
-    color: #000000;
+    font-family:  "Mulish", sans-serif;
+    color: var(--clr_black);
 }
 
 .container{
@@ -553,6 +564,13 @@ border-bottom: 3px solid #ffffffff;
     font-size: 18px;
     font-family: openSans, sans-serif;
     letter-spacing: 1px;
+    color: #2C3C4A;
+}
+
+.blog-card-font{
+    font-size: 16px;
+    font-family: openSans, sans-serif;
+    /* letter-spacing: 1px; */
     color: #2C3C4A;
 }
 
