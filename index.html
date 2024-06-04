@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>hosteldemo</title>
+  </head>
+  <body>
+    <!-- nav -->
+    /
+
+    <!-- hero section -->
+    <!-- <div class="container-fluid hero-container special-padding-top d-flex mx-0">
+      <div class="top-section-left-style">
+        <div class="text-container">
+          <div class="text-content">
+            <h2 class="title-text">Padma Girls Hostel</h2>
+            <div class="d-flex mt-4">
+              <div class="leftline-dark"></div>
+              <div>
+                <h3 class="ps-3">Welcome to Padma Girls Hostel</h3>
+                <p class="ps-3 subtext">
+                  Safe, Comfortable, and Affordable Accommodation for Women
+                </p>
+              </div>
+            </div>
+            <p class="card-font mt-3">
+              "Padma Girls Hostel offers a safe, secure, and comfortable
+              environment for women. Located in a convenient area, our hostel is
+              equipped with modern amenities to ensure a pleasant stay. We
+              provide well-furnished rooms, hygienic food, and a friendly
+              atmosphere."
+            </p>
+            <div class="d-flex mt-5 align-items-center">
+              <button class="darkbutton button-grow border-0">Book now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-0 d-flex top-section-right-style">
+        <div class="hero-image-container">
+          <img
+            src="images/hero section right side image.jpg"
+            alt="image"
+            class="w-100 h-100 hero-image"
+          />
+        </div>
+      </div>
+    </div> -->
+
+    <!-- first card section -->
+    <div class="card-section-space">
+      <div class="container-bg"></div>
+      <div class="container px-0 mt-5">
+        <div class="d-flex justify-content-between special-padding-top">
+          <div><h3 class="fw-bold">Hostel rooms</h3></div>
+          <div class="lightbutton button-grow">View all rooms</div>
+        </div>
+        <!-- cards -->
+        <div class="row row-cols-1 row-cols-md-3 mt-5">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card h-100 box-shadow border-0">
+              <img src="images/01.webp" class="card-img-top" alt="image" />
+              <span class="media-label">
+                <span class="price titles">$18</span>/1night
+              </span>
+              <div class="card-body-container">
+                <h5 class="card-title fw-bolder text">
+                  Bed in 6-Bed Room with Shared Bathroom
+                </h5>
+                <div class="card-text d-flex">
+                  <div class="d-flex align-items-top">
+                    <div><img src="svg/profile.svg" alt="profile" /></div>
+                    <div class="card-font">2 Sleeps</div>
+                  </div>
+
+                  <div class="d-flex align-items-center ms-3">
+                    <div><img src="svg/bunkbed.svg" alt="bed" /></div>
+                    <div class="ps-2 card-font">1 Bunk Bed</div>
+                  </div>
+                </div>
+                <p class="darktext fw-bold mt-3">
+                  See availability <i class="bi bi-arrow-right ps-2"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card h-100 box-shadow border-0">
+              <img src="images/02.webp" class="card-img-top" alt="image" />
+              <span class="media-label">
+                <span class="price titles">$18</span>/1night
+              </span>
+              <div class="card-body-container">
+                <h5 class="card-title fw-bolder">
+                  Double Room with Private Bathroom
+                </h5>
+                <div class="card-text d-flex">
+                  <div class="d-flex align-items-center">
+                    <div><img src="svg/profile.svg" alt="profile" /></div>
+                    <div class="card-font">2 Sleeps</div>
+                  </div>
+                  <div class="d-flex align-items-top ms-3">
+                    <div><img src="svg/twinbed.svg" alt="bed" /></div>
+                    <div class="ps-2 card-font">2 Twin Beds</div>
+                  </div>
+                </div>
+                <p class="darktext fw-bold mt-3">
+                  See availability <i class="bi bi-arrow-right ps-2"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card h-100 darkbg p-5 pe-5">
+              <h2 style="font-size: 32px" class="fw-bolder">
+                Stay Longer, Save More
+              </h2>
+              <p style="font-size: 18px">
+                It's simple: the longer you stay, the more you save!
+              </p>
+              <div class="d-flex">
+                <div class="leftline-light"></div>
+                <div class="ps-3">
+                  <p>
+                    Save up to <b>30%</b> on daily rate for stays longer than 14
+                    nights.
+                  </p>
+
+                  <p>
+                    Save up to <b>20%</b> off the nightly rate on stays between
+                    7-14 nights
+                  </p>
+                </div>
+              </div>
+              <button class="lightbutton w-50 mt-3 button-grow border-0">
+                Choose room
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- video section -->
+    <div class="container section-space">
+      <div class="d-flex container-fluid ps-0">
+        <div class="row">
+          <div class="col-md-6 my-5">
+            <h1 class="subtitle">Why Choose Us?</h1>
+            <p class="pt-3 card-font">
+              Safe, Comfortable, and Affordable Accommodation for Women
+            </p>
+            <!-- icon -->
+            <div class="row row-cols-1 row-cols-md-2 pe-5">
+              <div class="col d-flex">
+                <div>
+                  <img src="svg/cctv.svg" alt="icon" />
+                </div>
+                <div class="ps-2">24/7 security with CCTV surveillance.</div>
+              </div>
+              <div class="col d-flex">
+                <div>
+                  <img src="svg/room.svg" alt="icon" />
+                </div>
+                <div class="ps-2">
+                  Fully furnished rooms with all necessary amenities.
+                </div>
+              </div>
+              <div class="col d-flex mt-4">
+                <div>
+                  <img src="svg/meal.svg" alt="icon" class="ps-1" />
+                </div>
+                <div class="ps-2">
+                  Nutritious and hygienic meals prepared in-house.
+                </div>
+              </div>
+              <div class="col d-flex mt-4">
+                <div>
+                  <img src="svg/transport.svg" alt="icon" />
+                </div>
+                <div class="ps-2">
+                  Easily accessible by public transportation.
+                </div>
+              </div>
+              <div class="col d-flex mt-4">
+                <div>
+                  <img src="svg/staff.svg" alt="icon" />
+                </div>
+                <div class="ps-2">Supportive and friendly staff.</div>
+              </div>
+            </div>
+            <div class="d-flex mt-5 align-items-center">
+              <button class="darkbutton button-grow border-0">Book now</button>
+              <p class="darktext fw-bold ps-3 pt-3">
+                More about <i class="bi bi-arrow-right ps-2"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 px-0">
+            <div class="video-content">
+              <div class="video-images">
+                <a href="https://youtu.be/ixIzimI35SE" target="_blank">
+                  <!-- play button -->
+                  <img src="svg/playbutton.svg" alt="icon" />
+                </a>
+              </div>
+              <div class="img-video-container">
+                <img src="images/about.webp" alt="image" class="img-video" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonial section -->
+    <div class="container section-space">
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="col-12 border-0">
+              <div class="row">
+                <div class="col-5 roundbor carousel-img-container">
+                  <img
+                    src="/images/slide01.webp"
+                    class="img-fluid roundbor h-100"
+                    alt="images"
+                  />
+                </div>
+                <div class="col-6 ms-3">
+                  <div class="card-body">
+                    <h5 class="subtitle">What our guests say</h5>
+                    <div class="card-text">
+                      <div class="card w-100 mt-4 p-5 testimonial-card">
+                        <div class="stars d-flex align-items-center mb-2">
+                          <img src="/svg/star.svg" alt="star1" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star2" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star3" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star4" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star5" class="pe-2" />
+                        </div>
+                        <p><b class="subtext">Date of stay :</b> May 2021</p>
+                        <p class="fontext mt-2">
+                          "Padma Girls Hostel is like a second home to me. The
+                          staff is very supportive and the facilities are
+                          excellent. I highly recommend it to anyone looking for
+                          a safe and comfortable place to stay."
+                        </p>
+                        <p class="mt-3"><b>Aarti Sharma</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 border-0">
+              <div class="row">
+                <div class="col-5 roundbor carousel-img-container">
+                  <img
+                    src="/images/4.webp"
+                    class="img-fluid roundbor h-100"
+                    alt="images"
+                  />
+                </div>
+                <div class="col-6 ms-3">
+                  <div class="card-body">
+                    <h5 class="subtitle">What our guests say</h5>
+                    <div class="card-text">
+                      <div class="card w-100 mt-4 p-5 testimonial-card">
+                        <div class="stars d-flex align-items-center mb-2">
+                          <img src="/svg/star.svg" alt="star1" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star2" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star3" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star4" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star5" class="pe-2" />
+                        </div>
+                        <p><b class="subtext">Date of stay :</b> May 2021</p>
+                        <p class="fontext mt-2">
+                          "I feel safe and comfortable here. The location is
+                          perfect for students and working women. The rooms are
+                          well-maintained and the food is hygienic and
+                          delicious."
+                        </p>
+                        <p class="mt-3"><b>Priya Verma </b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <div class="col-12 border-0">
+              <div class="row">
+                <div class="col-5 roundbor carousel-img-container">
+                  <img
+                    src="/images/4.webp"
+                    class="img-fluid roundbor h-100"
+                    alt="images"
+                  />
+                </div>
+                <div class="col-6 ms-3">
+                  <div class="card-body">
+                    <h5 class="subtitle">What our guests say</h5>
+                    <div class="card-text">
+                      <div class="card w-100 mt-4 p-5 testimonial-card">
+                        <div class="stars d-flex align-items-center mb-2">
+                          <img src="/svg/star.svg" alt="star1" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star2" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star3" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star4" class="pe-2" />
+                          <img src="/svg/star.svg" alt="star5" class="pe-2" />
+                        </div>
+                        <p><b class="subtext">Date of stay :</b> May 2021</p>
+                        <p class="fontext mt-2">
+                          <b class="subtext">Ultrices gravida dictum fusce ut</b
+                          ><br />
+                          placer orci nulla pellentesque Senect et netus et
+                          malesuada Ultrices gravida dictum fusce ut placer orci
+                          nulla pellentesque. Senect et netus et malesuada
+                        </p>
+                        <p class="mt-3"><b>Lisa Adams</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <button
+          class="carousel-control-prev click-button"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-arrow-right click-button p-3 rounded"></i>
+        </button>
+        <button
+          class="carousel-control-next click-button"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <i class="bi bi-arrow-left click-button p-3 rounded"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Accomodation section -->
+    <div class="accomodation-section section-space lightbg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-container">
+              <h2 class="subtitle">Find suitable budget accommodation</h2>
+              <p class="col-10 subtext mt-2">
+                Condimentum id venenatis a condimentum vitae sapien pellentesque
+                habitant. At augue eget arcu dictum varius duis at consectetur
+              </p>
+            </div>
+            <!-- icons-->
+            <div class="row row-cols-1 row-cols-md-1 mt-5">
+              <div class="col">
+                <div class="d-flex">
+                  <div class="content-icon">
+                    <img src="svg/hotel.svg" alt="icon" />
+                  </div>
+                  <div class="ms-4">
+                    <p class="titles mb-0">Hostel territory</p>
+                    <p class="mt-2 fontext">
+                      Consequat interdum <br />
+                      varius sit amet mattis
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="d-flex">
+                  <div class="content-icon">
+                    <img src="svg/guest.svg" alt="icon" />
+                  </div>
+                  <div class="ms-4">
+                    <p class="titles mb-0">Accommodates guests</p>
+                    <p class="mt-2 fontext">
+                      Consequat interdum <br />
+                      varius sit amet mattis
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="d-flex">
+                  <div class="content-icon">
+                    <img src="svg/bedroom.svg" alt="icon" />
+                  </div>
+                  <div class="ms-4">
+                    <p class="titles mb-0">Grateful guests</p>
+                    <p class="mt-2 fontext">
+                      Consequat interdum <br />
+                      varius sit amet mattis
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- right side -->
+          <div class="col-md-6 position-relative">
+            <img
+              src="images/promo.webp"
+              alt="images"
+              class="h-100 w-100 rounded"
+            />
+            <div class="media_card media_card--top box-shadow">
+              <h4 class="media_card-text">
+                This is the perfect hostel for a weekend getaway!
+              </h4>
+              <div class="d-flex">
+                <div>
+                  <img src="images/5.jpg" alt="profile" class="card-icon" />
+                </div>
+                <div>
+                  <div class="media_card-footer d-flex align-items-center ps-3">
+                    <div class="wrapper d-flex flex-column">
+                      <div class="stars d-flex align-items-center">
+                        <img src="svg/star.svg" alt="star1" />
+                        <img src="svg/star.svg" alt="star2" />
+                        <img src="svg/star.svg" alt="star3" />
+                        <img src="svg/star.svg" alt="star4" />
+                        <img src="svg/star.svg" alt="star5" />
+                      </div>
+                      <span class="name h6">Esmond Ward</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="media_card media_card--bottom box-shadow">
+              <h4 class="media_card-text titles">
+                Family Room with Private Bathroom
+              </h4>
+              <div class="media_card-pricing">
+                <div class="d-flex align-items-center mt-2">
+                  <div>
+                    <h2><b class="subtitle">$149</b></h2>
+                  </div>
+                  <div>/ 1 night</div>
+                </div>
+              </div>
+              <a
+                class="media_card-btn btn lightbutton mt-3 button-grow"
+                href="#"
+                >See availability</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery section -->
+    <div class="container section-space">
+      <div class="d-flex justify-content-between">
+        <div><h3 class="subtitle">Photos of our rooms</h3></div>
+        <div class="lightbutton button-grow">View all rooms</div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-4 roundbor">
+          <div class="content-image roundbor">
+            <a
+              href="images/full01.webp"
+              data-fancybox="gallery"
+              data-caption="Caption #1"
+            >
+              <img src="images/full01.webp" alt="image" class="roundbor" />
+
+              <div class="overlay"></div
+            ></a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="col d-flex flex-column justify-content-between h-100">
+            <div class="content-small-image roundbor">
+              <a
+                href="images/full09.webp"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <img src="images/full09.webp" alt="image" class="roundbor" />
+                <div class="overlay"></div>
+              </a>
+            </div>
+            <div class="content-small-image roundbor">
+              <a
+                href="images/full12.webp"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <img src="images/full12.webp" alt="image" class="roundbor" />
+                <div class="overlay"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 roundbor">
+          <div class="content-image roundbor">
+            <a
+              href="images/gallery04.webp"
+              data-fancybox="gallery"
+              data-caption="Caption #1"
+            >
+              <img src="images/gallery04.webp" alt="image" class="roundbor" />
+              <div class="overlay"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- news section -->
+    <div class="section-space">
+      <div class="container-back"></div>
+      <div class="container special-padding-top">
+        <div class="d-flex justify-content-between">
+          <div><h3 class="subtitle">Hosteller news</h3></div>
+          <div class="lightbutton button-grow">View all news</div>
+        </div>
+        <!-- cards -->
+        <div class="row row-cols-1 row-cols-md-3 mt-5">
+          <div class="col">
+            <div class="card h-100 roundbor border-0 box-shadow">
+              <img src="images/4.webp" class="card-img-top" alt="image h-20" />
+              <span class="media-tag">
+                <span class="ribbon fw-bold">Travel</span>
+              </span>
+              <div class="card-body p-4">
+                <h5 class="card-title titles text">
+                  How to cure wanderlust without leaving your home
+                </h5>
+                <p>
+                  Ultrices gravida dictum fusce ut placer orci nulla
+                  pellentesque. Senect et netus et malesuada
+                </p>
+                <div class="card-text d-flex">
+                  <p class="">
+                    <img
+                      src="svg/calendar.svg"
+                      alt="profile"
+                      class="me-2"
+                    />June 16, 2021
+                  </p>
+                  <p class="ps-3">
+                    <img src="svg/eye.svg" alt="bed" /> 120 views
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 roundbor border-0 box-shadow">
+              <img src="images/03.webp" class="card-img-top" alt="image h-20" />
+              <span class="media-tag">
+                <span class="ribbon fw-bold">Tourist Guide</span>
+              </span>
+              <div class="card-body p-4">
+                <h5 class="card-title titles text">
+                  How to cure wanderlust without leaving your home
+                </h5>
+                <p>
+                  Ultrices gravida dictum fusce ut placer orci nulla
+                  pellentesque. Senect et netus et malesuada
+                </p>
+                <div class="card-text d-flex">
+                  <p class="">
+                    <img
+                      src="svg/calendar.svg"
+                      alt="profile"
+                      class="me-2"
+                    />June 16, 2021
+                  </p>
+                  <p class="ps-3">
+                    <img src="svg/eye.svg" alt="bed" /> 120 views
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 roundbor border-0 box-shadow">
+              <img src="images/6.webp" class="card-img-top" alt="image h-20" />
+              <span class="media-tag">
+                <span class="ribbon fw-bold">Commuincation</span>
+              </span>
+              <div class="card-body p-4">
+                <h5 class="card-title titles text">
+                  How to cure wanderlust without leaving your home
+                </h5>
+                <p>
+                  Ultrices gravida dictum fusce ut placer orci nulla
+                  pellentesque. Senect et netus et malesuada
+                </p>
+                <div class="card-text d-flex">
+                  <p class="">
+                    <img
+                      src="svg/calendar.svg"
+                      alt="profile"
+                      class="me-2"
+                    />June 16, 2021
+                  </p>
+                  <p class="ps-3">
+                    <img src="svg/eye.svg" alt="bed" /> 120 views
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact section -->
+    <div class="container-fluid mb-0 pb-0">
+      <div class="d-flex container py-0 align-items-center mb-0 pb-0">
+        <div class="col-md-6">
+          <h1 class="subtitle">Contacts</h1>
+          <!-- icon -->
+          <div class="row row-cols-1 row-cols-md-1 mt-3">
+            <div class="col d-flex align-items-center">
+              <div>
+                <img
+                  src="/svg/phone.svg"
+                  alt="icon"
+                  class="theme-element-container"
+                />
+              </div>
+              <div class="ps-4">
+                <div class="titles">Phone</div>
+                <div class="card-font">
+                  01-5526525 (Thasikhel) <br />
+                  01-5524297 (Jawlakhel)
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex align-items-center mt-4">
+              <div>
+                <img
+                  src="/svg/email.svg"
+                  alt="icon"
+                  class="theme-element-container"
+                />
+              </div>
+              <div class="ps-4">
+                <div class="titles">Email</div>
+                <div class="card-font">info@padmagirlshostel.com.np</div>
+              </div>
+            </div>
+            <div class="col d-flex mt-4 align-items-center">
+              <div>
+                <img
+                  src="/svg/location-footer.svg"
+                  alt="icon"
+                  class="theme-element-container"
+                />
+              </div>
+              <div class="ps-4">
+                <div class="titles">Location</div>
+                <div class="card-font">
+                  Padma Girls Hostel, 123 Main Street, Kathmandu, Nepal
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col d-flex mt-4 align-items-center">
+              <div>
+                <img
+                  src="svg/clock.svg"
+                  alt="icon"
+                  class="theme-element-container"
+                />
+              </div>
+              <div class="ps-4">
+                <div class="titles">Working Time</div>
+                <div>Everyday</div>
+                <div>10 am - 20 pm</div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-md-6 ps-5 map-container">
+          <div>
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.363576374164!2d85.31460437492188!3d27.675155626911614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19cc2773f2c3%3A0xcedcc5cb83528083!2sPadma%20Girls%20Hostel%20-%20Natole%20Lalitpur!5e0!3m2!1sen!2sus!4v1717405248028!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="mt-0 footer">
+      <div class="container">
+        <div class="row d-flex justify-content-between mt-3">
+          <div class="col-3">
+            <div class="d-flex align-items-center">
+              <span class="brand-logo theme-element"
+                ><svg
+                  id="brandHeader"
+                  width="22"
+                  height="23"
+                  viewBox="0 0 22 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.03198 3.80281V7.07652L3.86083 9.75137L0.689673 12.4263L0.667474 6.56503C0.655304 3.34138 0.663875 0.654206 0.686587 0.593579C0.71907 0.506918 1.4043 0.488223 3.87994 0.506219L7.03198 0.529106V3.80281ZM21.645 4.36419V5.88433L17.0383 9.76316C14.5046 11.8966 11.2263 14.6552 9.75318 15.8934L7.07484 18.145V20.3225V22.5H3.85988H0.64502L0.667303 18.768L0.689673 15.036L2.56785 13.4609C3.60088 12.5946 6.85989 9.85244 9.81009 7.36726L15.1741 2.84867L18.4096 2.8464L21.645 2.84413V4.36419ZM21.645 15.5549V22.5H18.431H15.217V18.2638V14.0274L15.4805 13.7882C15.8061 13.4924 21.5939 8.61606 21.6236 8.61248C21.6353 8.61099 21.645 11.7351 21.645 15.5549Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </span>
+              <h3 class="fw-bold">Hosteller</h3>
+            </div>
+            <p class="footer-font mt-4">
+              Ut tellus elementum sagittis vitae et leo duis ut. Sit amet
+              consectetur adipiscing elit duis. Ultrices gravida dictum fusce ut
+              placer orci nulla pellentesque
+            </p>
+          </div>
+          <div class="col-3">
+            <div class="titles ms-5">Quick links</div>
+            <div class="ms-3">
+              <ul>
+                <li class="mt-4">
+                  <a href="index.html" class="footer-link footer-font">Home</a>
+                </li>
+                <li class="mt-2">
+                  <a href="html/about.html" class="footer-link footer-font"
+                    >About</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="footer-link footer-font">Rooms </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="footer-link footer-font">News </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="titles">Contact Us</div>
+            <div class="d-flex mt-4 align-items-top">
+              <div><img src="svg/location-mini.svg" alt="icon" /></div>
+              <div class="ps-4 footer-font">
+                54826 Fadel Circles <br />
+                Darrylstad, AZ 90995
+              </div>
+            </div>
+            <div class="d-flex mt-4 align-items-center">
+              <div><img src="svg/phone-mini.svg" alt="icon" /></div>
+              <div class="ps-4 footer-font">
+                (329) 580-7077 <br />
+                (650) 382-5020
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="titles">Follow Us</div>
+            <div class="footer-font mt-4">
+              Venenatis urna cursus<br />
+              eget nunc scelerisque
+            </div>
+            <div class="mt-4">
+              <!-- social media icons -->
+              <img src="svg/facebook.svg" alt="fb" class="me-4" />
+              <img src="svg/instagram.svg" alt="insta" class="me-4" />
+              <img src="svg/twitter.svg" alt="tweet" class="me-4" />
+              <img src="svg/whatsapp.svg" alt="whatsapp" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- copyright section -->
+    <div class="copyright-section">
+      Merkulove © Hosteller Template All rights reserved Copyrights 2021
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="js/style.js"></script>
+    <!--  -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        // Your custom options for a specific gallery
+      });
+    </script>
+  </body>
+</html>

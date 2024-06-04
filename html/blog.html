@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Rooms</title>
+  </head>
+  <!--  -->
+  <body>
+    <!-- nav -->
+    <div
+      id="nav"
+      class="col-12 navbar navbar-light p-3 mb-5 bg-body justify-content-between w-100 sticky box-shadow"
+    >
+      <div class="container text-align-baseline justify-content-between px-0">
+        <div class="d-flex col-4">
+          <!-- <span class="brand-logo theme-element"
+            ><svg
+              id="brandHeader"
+              width="22"
+              height="23"
+              viewBox="0 0 22 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.03198 3.80281V7.07652L3.86083 9.75137L0.689673 12.4263L0.667474 6.56503C0.655304 3.34138 0.663875 0.654206 0.686587 0.593579C0.71907 0.506918 1.4043 0.488223 3.87994 0.506219L7.03198 0.529106V3.80281ZM21.645 4.36419V5.88433L17.0383 9.76316C14.5046 11.8966 11.2263 14.6552 9.75318 15.8934L7.07484 18.145V20.3225V22.5H3.85988H0.64502L0.667303 18.768L0.689673 15.036L2.56785 13.4609C3.60088 12.5946 6.85989 9.85244 9.81009 7.36726L15.1741 2.84867L18.4096 2.8464L21.645 2.84413V4.36419ZM21.645 15.5549V22.5H18.431H15.217V18.2638V14.0274L15.4805 13.7882C15.8061 13.4924 21.5939 8.61606 21.6236 8.61248C21.6353 8.61099 21.645 11.7351 21.645 15.5549Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span> -->
+
+          <img src="/images/logo_PGH.jpg" alt="logo" class="logo" />
+          <h3 class="darktext fw-bold pt-2">Padma Girls Hostel</h3>
+        </div>
+        <div class="col-7">
+          <ul class="d-flex justify-content-evenly text-align-center w-100">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/about.html">About</a></li>
+            <li class="dropdown">
+              <a href="/html/rooms.html">Rooms </a>
+              <div class="dropdown-content">
+                <a href="/html/SingleRoom.html">Single room</a>
+              </div>
+            </li>
+            <li><a href="/html/blog.html">Blogs</a></li>
+            <li class="dropdown">
+              <a href="/html/news.html">News </a>
+              <div class="dropdown-content">
+                <a href="/html/travel.html">Single Post</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#">Pages </a>
+              <div class="dropdown-content">
+                <a href="/html/gallery.html">Gallery</a>
+                <a href="/html/FAQ.html">FAQ</a>
+              </div>
+            </li>
+            <li>
+              <a href="/html/contact.html" class="nav-lightbutton">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="header lightbg special-padding-top">
+      <div class="container">
+        <div class="py-5">
+          <div class="titles">
+            <a href="/index.html" class="darktext">Home</a> / Blog
+          </div>
+          <div class="title-text">Our Blog</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- toggle -->
+    <!-- <div class="container">
+      <button
+        class="border-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+        <img src="/svg/hamburger.svg" alt="ham" />
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="justify-content-evenly text-align-center w-100">
+            <li><a href="/index.html">Home</a></li>
+            <li class="mt-2"><a href="about.html">About</a></li>
+            <li class="dropdown mt-2">
+              <a href="rooms.html">Rooms </a>
+              <div class="dropdown-content">
+                <a href="/html/SingleRoom.html">Single room</a>
+              </div>
+            </li>
+            <li class="dropdown mt-2">
+              <a href="news.html">News </a>
+              <div class="dropdown-content">
+                <a href="/html/travel.html">Single Post</a>
+              </div>
+            </li>
+            <li class="dropdown mt-2">
+              <a href="#">Pages </a>
+              <div class="dropdown-content">
+                <a href="/html/gallery.html">Gallery</a>
+                <a href="/html/FAQ.html">FAQ</a>
+              </div>
+            </li>
+            <li class="dropdown mt-2">
+              <a href="#" class="">Contacts</a>
+              <div class="dropdown-content">
+                <a href="/html/contact1.html">Contacts V1</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container card-font mt-5">
+      Read the latest news and updates from Padma Girls Hostel.
+    </div>
+
+    <!-- cards section -->
+
+    <div class="container section-rooms-top-space">
+      <div class="row row-cols-1 row-cols-md-3 mt-5">
+        <div class="col">
+          <div class="card box-shadow border-0">
+            <img src="/images/01.webp" class="card-img-top" alt="image" />
+            <div class="blog-body-container">
+              <h5 class="card-title fw-bolder text">
+                Tips for a Comfortable Stay at Padma Girls Hostel
+              </h5>
+              <p class="card-font">
+                Discover our top tips for making the most of your stay with us.
+                From settling in to making friends, we've got you covered.<span
+                  id="dot1"
+                  >...</span
+                ><span id="more1">
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                </span>
+              </p>
+              <button
+                onclick="toggleReadMore(this)"
+                data-dot="dot1"
+                data-more="more1"
+                class="darkbutton border-0 button-grow"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card box-shadow border-0">
+            <img src="/images/01.webp" class="card-img-top" alt="image" />
+            <div class="blog-body-container">
+              <h5 class="card-title fw-bolder text">
+                Tips for a Comfortable Stay at Padma Girls Hostel
+              </h5>
+              <p class="card-font">
+                Discover our top tips for making the most of your stay with us.
+                From settling in to making friends, we've got you covered.<span
+                  id="dot2"
+                  >...</span
+                ><span id="more2">
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                </span>
+              </p>
+              <button
+                onclick="toggleReadMore(this)"
+                data-dot="dot2"
+                data-more="more2"
+                class="darkbutton border-0 button-grow"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card box-shadow border-0">
+            <img src="/images/01.webp" class="card-img-top" alt="image" />
+            <div class="blog-body-container">
+              <h5 class="card-title fw-bolder text">
+                Tips for a Comfortable Stay at Padma Girls Hostel
+              </h5>
+              <p class="card-font">
+                Discover our top tips for making the most of your stay with us.
+                From settling in to making friends, we've got you covered.<span
+                  id="dot3"
+                  >...</span
+                ><span id="more3">
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                </span>
+              </p>
+              <button
+                onclick="toggleReadMore(this)"
+                data-dot="dot3"
+                data-more="more3"
+                class="darkbutton border-0 button-grow"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card box-shadow border-0">
+            <img src="/images/01.webp" class="card-img-top" alt="image" />
+            <div class="blog-body-container">
+              <h5 class="card-title fw-bolder text">
+                Tips for a Comfortable Stay at Padma Girls Hostel
+              </h5>
+              <p class="card-font">
+                Discover our top tips for making the most of your stay with us.
+                From settling in to making friends, we've got you covered.<span
+                  id="dot4"
+                  >...</span
+                ><span id="more4">
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                </span>
+              </p>
+              <button
+                onclick="toggleReadMore(this)"
+                data-dot="dot4"
+                data-more="more4"
+                class="darkbutton border-0 button-grow"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card box-shadow border-0">
+            <img src="/images/01.webp" class="card-img-top" alt="image" />
+            <div class="blog-body-container">
+              <h5 class="card-title fw-bolder text">
+                Tips for a Comfortable Stay at Padma Girls Hostel
+              </h5>
+              <p class="card-font">
+                Discover our top tips for making the most of your stay with us.
+                From settling in to making friends, we've got you covered.<span
+                  id="dot5"
+                  >...</span
+                ><span id="more5">
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                </span>
+              </p>
+              <button
+                onclick="toggleReadMore(this)"
+                data-dot="dot5"
+                data-more="more5"
+                class="darkbutton border-0 button-grow"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card box-shadow border-0">
+            <img src="/images/01.webp" class="card-img-top" alt="image" />
+            <div class="blog-body-container">
+              <h5 class="card-title fw-bolder text">
+                Tips for a Comfortable Stay at Padma Girls Hostel
+              </h5>
+              <p class="card-font">
+                Discover our top tips for making the most of your stay with us.
+                From settling in to making friends, we've got you covered.<span
+                  id="dot6"
+                  >...</span
+                ><span id="more6">
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                  Discover our top tips for making the most of your stay with
+                  us. From settling in to making friends, we've got you covered.
+                </span>
+              </p>
+              <button
+                onclick="toggleReadMore(this)"
+                data-dot="dot6"
+                data-more="more6"
+                class="darkbutton border-0 button-grow"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of card section -->
+
+    <!-- pagination -->
+    <div class="container section-rooms-space">
+      <div class="d-flex">
+        <div class="me-2 ms-0"><a href="#" class="rooms-num">1</a></div>
+        <div class="me-2"><a href="#" class="rooms-num">2</a></div>
+        <div class="me-2"><a href="#" class="rooms-num">3</a></div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="mt-0 footer">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-3">
+            <div class="d-flex align-items-center">
+              <span class="brand-logo theme-element"
+                ><svg
+                  id="brandHeader"
+                  width="22"
+                  height="23"
+                  viewBox="0 0 22 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.03198 3.80281V7.07652L3.86083 9.75137L0.689673 12.4263L0.667474 6.56503C0.655304 3.34138 0.663875 0.654206 0.686587 0.593579C0.71907 0.506918 1.4043 0.488223 3.87994 0.506219L7.03198 0.529106V3.80281ZM21.645 4.36419V5.88433L17.0383 9.76316C14.5046 11.8966 11.2263 14.6552 9.75318 15.8934L7.07484 18.145V20.3225V22.5H3.85988H0.64502L0.667303 18.768L0.689673 15.036L2.56785 13.4609C3.60088 12.5946 6.85989 9.85244 9.81009 7.36726L15.1741 2.84867L18.4096 2.8464L21.645 2.84413V4.36419ZM21.645 15.5549V22.5H18.431H15.217V18.2638V14.0274L15.4805 13.7882C15.8061 13.4924 21.5939 8.61606 21.6236 8.61248C21.6353 8.61099 21.645 11.7351 21.645 15.5549Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </span>
+              <h3 class="fw-bold">Hosteller</h3>
+            </div>
+            <p class="footer-font mt-4">
+              Ut tellus elementum sagittis vitae et leo duis ut. Sit amet
+              consectetur adipiscing elit duis. Ultrices gravida dictum fusce ut
+              placer orci nulla pellentesque
+            </p>
+          </div>
+          <div class="col-3">
+            <div class="titles ms-5">Quick links</div>
+            <div class="ms-3">
+              <ul>
+                <li class="mt-4">
+                  <a href="/index.html" class="footer-link footer-font">Home</a>
+                </li>
+                <li class="mt-2">
+                  <a href="/html/about.html" class="footer-link footer-font"
+                    >About</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="footer-link footer-font">Rooms </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="footer-link footer-font">News </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="titles">Contact Us</div>
+            <div class="d-flex mt-4 align-items-top">
+              <div><img src="/svg/location-mini.svg" alt="icon" /></div>
+              <div class="footer-font about-card-icon">
+                Jawlakhel, Lalitpur <br />
+                Thasikhel, Lalitpur
+              </div>
+            </div>
+            <div class="d-flex mt-4 align-items-center">
+              <div><img src="/svg/phone-mini.svg" alt="icon" /></div>
+              <div class="footer-font about-card-icon">
+                01-5526525 (Thasikhel) <br />
+                01-5524297 (Jawlakhel)
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="titles">Follow Us</div>
+            <div class="footer-font mt-4">
+              Venenatis urna cursus<br />
+              eget nunc scelerisque
+            </div>
+            <div class="social mt-4">
+              <!-- social media icons -->
+              <a href="https://www.facebook.com/padmagirlshostel">
+                <img src="/svg/facebook.svg" alt="fb" class="about-footer-icon"
+              /></a>
+              <img
+                src="/svg/instagram.svg"
+                alt="insta"
+                class="about-footer-icon"
+              />
+              <img
+                src="/svg/twitter.svg"
+                alt="tweet"
+                class="about-footer-icon"
+              />
+              <img src="/svg/whatsapp.svg" alt="whatsapp" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- copyright section -->
+    <div class="copyright-section">
+      Merkulove © Hosteller Template All rights reserved Copyrights 2021
+    </div>
+
+    <script src="/js/style.js"></script>
+    <!--  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
